@@ -6,8 +6,7 @@ install twilio by
 `pip install twilio`
 
 ## run
-`
+```
 wa_service = WhatsAppService()
 resp = wa_service.send('+2348187654321', 'Hello there!', attachment='https://existing.link/to-your-media-file.ext')
-
-`
+```
