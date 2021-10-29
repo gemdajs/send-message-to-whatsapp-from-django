@@ -7,8 +7,8 @@ class WhatsAppService:
         auth_token = '<TWILIO_AUTH_TOKEN>'
         client = Client(account_sid, auth_token)
 
-        wa_from = 'whatsapp:+2348123456789'
-        wa_to = 'whatsapp:+2348087654321'
+        wa_from = 'whatsapp:+2348123456789' # verified whatsapp business number
+        wa_to = 'whatsapp:' + recipent # recipent number
 
         if attachment:
             message = client.messages.create(
